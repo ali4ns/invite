@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Small Reminder</title>
+    <meta name="description" content="A small reminder about a pizza debt." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <main>
+        <section class="hero-section">
+            <div class="hero-inner">
+                <p class="eyebrow reveal">A SMALL REMINDER</p>
+                <h1 class="hero-title">
+                    <span class="line reveal delay-1">You owe me</span>
+                    <span class="line pizza reveal delay-2"><em>a pizza.</em></span>
+                </h1>
+                <p class="intro reveal delay-3">I think it's about time you paid your debt.</p>
+                <div class="scroll-hint reveal delay-4" aria-hidden="true">
+                    <span>keep going</span>
+                    <span class="arrow">↓</span>
+                </div>
+            </div>
+        </section>
+        <section class="question-section">
+            <div class="question-inner">
+                <p class="mini-label reveal-on-scroll">THE IMPORTANT PART</p>
+                <h2 class="question-title reveal-on-scroll">So...<br /><em>what do you say?</em></h2>
+                <div class="actions reveal-on-scroll">
+                    <button id="yesBtn" class="btn primary" type="button">LET'S GO <span>↗</span></button>
+                    <button id="noBtn" class="btn secondary" type="button">MAYBE NOT</button>
+                </div>
+                <p id="reply" class="reply" aria-live="polite"></p>
+            </div>
+        </section>
+        <section id="success" class="success-section" aria-hidden="true">
+            <div class="success-inner">
+                <p class="eyebrow light">GOOD CHOICE</p>
+                <h2 class="success-title">Now just<br /><em>coordinate with me.</em></h2>
+                <p class="success-copy">Text me and we'll figure it out :)</p>
+                <div class="pizza-mark" aria-hidden="true">🍕</div>
+                <p class="signature"><strong>MOHANDES</strong> Nahid Rezaeizadeh</p>
+                <p class="tiny-note">Pizza debt: officially being collected.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
